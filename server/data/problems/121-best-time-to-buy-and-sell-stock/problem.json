@@ -1,0 +1,89 @@
+{
+  "id": 121,
+  "slug": "best-time-to-buy-and-sell-stock",
+  "name": "Best Time to Buy and Sell Stock",
+  "difficulty": "easy",
+  "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+  "description": "description.md",
+  "analysis": "analysis.md",
+  "use_cases": [
+    "Maximizing profit in a time-series dataset",
+    "Finding the maximum upward delta between two ordered events"
+  ],
+  "solutions": [
+    {
+      "slug": "0-check-all-pairs",
+      "name": "Check All Pairs",
+      "approach": "naive",
+      "tags": [],
+      "overview": "solutions/0-check-all-pairs/overview.md",
+      "pseudocode": "solutions/0-check-all-pairs/pseudo.md",
+      "time_complexity": "O(n²)",
+      "space_complexity": "O(1)",
+      "issues": [
+        "Might take too long on larger datasets due to quadratic time complexity",
+        "Redundant comparisons (re-examines every buy/sell combination)"
+      ],
+      "implementations": [
+        {
+          "language": "python",
+          "file": "solutions/0-check-all-pairs/code.py",
+          "data_structures": ["array"]
+        },
+        {
+          "language": "java",
+          "file": "solutions/0-check-all-pairs/code.java",
+          "data_structures": ["array"]
+        }
+      ]
+    },
+    {
+      "slug": "1-precompute-minimums",
+      "name": "Precompute Minimums",
+      "approach": "suboptimal",
+      "tags": ["dynamic-programming"],
+      "overview": "solutions/1-precompute-minimums/overview.md",
+      "pseudocode": "solutions/1-precompute-minimums/pseudo.md",
+      "time_complexity": "O(n)",
+      "space_complexity": "O(n)",
+      "issues": [
+        "Uses extra linear space to store the minimum price seen so far at each index"
+      ],
+      "implementations": [
+        {
+          "language": "python",
+          "file": "solutions/1-precompute-minimums/code.py",
+          "data_structures": ["array"]
+        },
+        {
+          "language": "java",
+          "file": "solutions/1-precompute-minimums/code.java",
+          "data_structures": ["array"]
+        }
+      ]
+    },
+    {
+      "slug": "2-track-minimum-price",
+      "name": "Track Minimum Price",
+      "approach": "optimal",
+      "tags": ["greedy", "sliding-window", "two-pointers"],
+      "overview": "solutions/2-track-minimum-price/overview.md",
+      "pseudocode": "solutions/2-track-minimum-price/pseudo.md",
+      "time_complexity": "O(n)",
+      "space_complexity": "O(1)",
+      "issues": [],
+      "implementations": [
+        {
+          "language": "python",
+          "file": "solutions/2-track-minimum-price/code.py",
+          "data_structures": ["array"]
+        },
+        {
+          "language": "java",
+          "file": "solutions/2-track-minimum-price/code.java",
+          "data_structures": ["array"]
+        }
+      ]
+    }
+  ]
+}

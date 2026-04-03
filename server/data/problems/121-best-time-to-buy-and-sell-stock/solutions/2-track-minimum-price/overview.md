@@ -1,0 +1,3 @@
+As we iterate through the prices once, we only need to know the global minimum encountered up to that specific moment to calculate the potential profit so there's no need to store every historical minimum in an array.
+
+By maintaining two variables: one for the lowest price seen so far and one for the maximum profit found so far, we can solve the problem in a single pass. This greedy logic ensures that we make a locally optimal choice at every step, comparing the current price against the best historical buy price without the memory overhead of a full DP table.

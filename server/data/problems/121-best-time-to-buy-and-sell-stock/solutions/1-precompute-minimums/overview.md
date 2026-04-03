@@ -1,0 +1,3 @@
+Uses Dynamic Programming to eliminate the need for nested loops. It operates on the insight that for any given day you choose to sell, your maximum profit is limited by the lowest price encountered before that day.
+
+Instead of searching backward for that minimum every time, the algorithm performs a preliminary pass to build a "minimums" array. This array stores the lowest value seen from the start up to each index. In a second pass, it simply subtracts the precomputed minimum from the current price. This reduces the time complexity to linear by using extra memory to store the state of the minimums.

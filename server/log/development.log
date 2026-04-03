@@ -1,0 +1,688 @@
+Started POST "/graphql" for ::1 at 2026-04-03 19:17:55 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblems", "variables" => {}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblems", "variables" => {}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}"}}
+uninitialized constant Types::SystemDesignSummaryType::StatusEnum
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/object.rb:136:in 'GraphQL::Schema::Object.const_missing'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/graphql/types/system_design_summary_type.rb:8:in '<class:SystemDesignSummaryType>'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/graphql/types/system_design_summary_type.rb:2:in '<module:Types>'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/graphql/types/system_design_summary_type.rb:1:in '<top (required)>'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/3.4.0/bundled_gems.rb:82:in 'Kernel.require'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/3.4.0/bundled_gems.rb:82:in 'block (2 levels) in Kernel#replace_require'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/zeitwerk-2.7.5/lib/zeitwerk/core_ext/kernel.rb:26:in 'Kernel#require'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/graphql/types/query_type.rb:58:in '<class:QueryType>'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/graphql/types/query_type.rb:2:in '<module:Types>'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/graphql/types/query_type.rb:1:in '<top (required)>'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/3.4.0/bundled_gems.rb:82:in 'Kernel.require'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/3.4.0/bundled_gems.rb:82:in 'block (2 levels) in Kernel#replace_require'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/zeitwerk-2.7.5/lib/zeitwerk/core_ext/kernel.rb:26:in 'Kernel#require'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/graphql/leetnotes_schema.rb:2:in '<class:LeetnotesSchema>'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/graphql/leetnotes_schema.rb:1:in '<top (required)>'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/3.4.0/bundled_gems.rb:82:in 'Kernel.require'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/3.4.0/bundled_gems.rb:82:in 'block (2 levels) in Kernel#replace_require'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/zeitwerk-2.7.5/lib/zeitwerk/core_ext/kernel.rb:26:in 'Kernel#require'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/controllers/graphql_controller.rb:7:in 'GraphqlController#execute'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/basic_implicit_render.rb:8:in 'ActionController::BasicImplicitRender#send_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/base.rb:215:in 'AbstractController::Base#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/rendering.rb:193:in 'ActionController::Rendering#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/callbacks.rb:261:in 'block in AbstractController::Callbacks#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/callbacks.rb:260:in 'AbstractController::Callbacks#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/rescue.rb:27:in 'ActionController::Rescue#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/instrumentation.rb:77:in 'block in ActionController::Instrumentation#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/notifications.rb:210:in 'block in ActiveSupport::Notifications.instrument'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/notifications.rb:210:in 'ActiveSupport::Notifications.instrument'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/instrumentation.rb:76:in 'ActionController::Instrumentation#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/params_wrapper.rb:259:in 'ActionController::ParamsWrapper#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/base.rb:152:in 'AbstractController::Base#process'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/routing/route_set.rb:67:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:53:in 'block in ActionDispatch::Journey::Router#serve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:133:in 'block in ActionDispatch::Journey::Router#find_routes'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:126:in 'Array#each'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:126:in 'ActionDispatch::Journey::Router#find_routes'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:34:in 'ActionDispatch::Journey::Router#serve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/routing/route_set.rb:896:in 'ActionDispatch::Routing::RouteSet#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/etag.rb:29:in 'Rack::ETag#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/conditional_get.rb:44:in 'Rack::ConditionalGet#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/head.rb:15:in 'Rack::Head#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/railties-7.2.3.1/lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/railties-7.2.3.1/lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/request_id.rb:33:in 'ActionDispatch::RequestId#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-cors-3.0.0/lib/rack/cors.rb:102:in 'Rack::Cors#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/railties-7.2.3.1/lib/rails/engine.rb:535:in 'Rails::Engine#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/configuration.rb:296:in 'Puma::Configuration::ConfigMiddleware#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/request.rb:103:in 'block in Puma::Request#handle_request'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/request.rb:102:in 'Puma::Request#handle_request'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/server.rb:503:in 'Puma::Server#process_client'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/server.rb:262:in 'block in Puma::Server#run'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+Completed 500 Internal Server Error in 701ms (Views: 1.4ms | GC: 26.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:21:37 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblems", "variables" => {}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblems", "variables" => {}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}"}}
+Completed 200 OK in 903ms (Views: 0.4ms | GC: 0.2ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:21:42 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblem", "variables" => {"slug" => "two-sum"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblem", "variables" => {"slug" => "two-sum"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}"}}
+Problem not found: two-sum
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/models/data_store.rb:23:in 'DataStore#problem'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/graphql/types/query_type.rb:37:in 'Types::QueryType#problem'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:762:in 'Kernel#public_send'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:762:in 'block (2 levels) in GraphQL::Schema::Field#resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:896:in 'GraphQL::Schema::Field#with_extensions'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:733:in 'block in GraphQL::Schema::Field#resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:883:in 'GraphQL::Execution::Interpreter::Runtime#minimal_after_lazy'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/query.rb:28:in 'GraphQL::Query::Runnable#after_lazy'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:731:in 'GraphQL::Schema::Field#resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:467:in 'block (2 levels) in GraphQL::Execution::Interpreter::Runtime#evaluate_selection_with_resolved_keyword_args'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/tracing/trace.rb:90:in 'GraphQL::Tracing::Trace#execute_field'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:466:in 'block in GraphQL::Execution::Interpreter::Runtime#evaluate_selection_with_resolved_keyword_args'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:821:in 'GraphQL::Execution::Interpreter::Runtime#call_method_on_directives'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:454:in 'GraphQL::Execution::Interpreter::Runtime#evaluate_selection_with_resolved_keyword_args'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:432:in 'block in GraphQL::Execution::Interpreter::Runtime#evaluate_selection_with_args'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:942:in 'GraphQL::Execution::Interpreter::Runtime#after_lazy'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:377:in 'GraphQL::Execution::Interpreter::Runtime#evaluate_selection_with_args'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:371:in 'block in GraphQL::Execution::Interpreter::Runtime#evaluate_selection'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/arguments_cache.rb:46:in 'block in GraphQL::Execution::Interpreter::ArgumentsCache#dataload_for'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/member/has_arguments.rb:295:in 'block (3 levels) in GraphQL::Schema::Member::HasArguments#coerce_arguments'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/dataloader/null_dataloader.rb:60:in 'GraphQL::Dataloader::NullDataloader#append_job'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/member/has_arguments.rb:276:in 'block (2 levels) in GraphQL::Schema::Member::HasArguments#coerce_arguments'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/member/has_arguments.rb:275:in 'Array#each'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/member/has_arguments.rb:275:in 'block in GraphQL::Schema::Member::HasArguments#coerce_arguments'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/member/has_arguments.rb:304:in 'GraphQL::Schema::Member::HasArguments#coerce_arguments'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/arguments_cache.rb:44:in 'GraphQL::Execution::Interpreter::ArgumentsCache#dataload_for'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:365:in 'GraphQL::Execution::Interpreter::Runtime#evaluate_selection'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:314:in 'block (3 levels) in GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/dataloader/null_dataloader.rb:60:in 'GraphQL::Dataloader::NullDataloader#append_job'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:313:in 'block (2 levels) in GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:300:in 'Hash#each'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:300:in 'block in GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:821:in 'GraphQL::Execution::Interpreter::Runtime#call_method_on_directives'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:299:in 'GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:110:in 'block (3 levels) in GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/dataloader/null_dataloader.rb:60:in 'GraphQL::Dataloader::NullDataloader#append_job'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:109:in 'block (2 levels) in GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:208:in 'GraphQL::Execution::Interpreter::Runtime#each_gathered_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:98:in 'block in GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:821:in 'GraphQL::Execution::Interpreter::Runtime#call_method_on_directives'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:97:in 'GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:76:in 'block (4 levels) in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/tracing/trace.rb:68:in 'GraphQL::Tracing::Trace#execute_query'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:75:in 'block (3 levels) in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/dataloader/null_dataloader.rb:60:in 'GraphQL::Dataloader::NullDataloader#append_job'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:61:in 'block (2 levels) in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:60:in 'Array#each'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:60:in 'Enumerable#each_with_index'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:60:in 'block in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/tracing/trace.rb:64:in 'GraphQL::Tracing::Trace#execute_multiplex'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:42:in 'GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema.rb:1629:in 'GraphQL::Schema.multiplex'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema.rb:1604:in 'GraphQL::Schema.execute'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/controllers/graphql_controller.rb:7:in 'GraphqlController#execute'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/basic_implicit_render.rb:8:in 'ActionController::BasicImplicitRender#send_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/base.rb:215:in 'AbstractController::Base#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/rendering.rb:193:in 'ActionController::Rendering#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/callbacks.rb:261:in 'block in AbstractController::Callbacks#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/callbacks.rb:260:in 'AbstractController::Callbacks#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/rescue.rb:27:in 'ActionController::Rescue#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/instrumentation.rb:77:in 'block in ActionController::Instrumentation#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/notifications.rb:210:in 'block in ActiveSupport::Notifications.instrument'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/notifications.rb:210:in 'ActiveSupport::Notifications.instrument'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/instrumentation.rb:76:in 'ActionController::Instrumentation#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/params_wrapper.rb:259:in 'ActionController::ParamsWrapper#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/base.rb:152:in 'AbstractController::Base#process'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/routing/route_set.rb:67:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:53:in 'block in ActionDispatch::Journey::Router#serve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:133:in 'block in ActionDispatch::Journey::Router#find_routes'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:126:in 'Array#each'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:126:in 'ActionDispatch::Journey::Router#find_routes'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:34:in 'ActionDispatch::Journey::Router#serve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/routing/route_set.rb:896:in 'ActionDispatch::Routing::RouteSet#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/etag.rb:29:in 'Rack::ETag#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/conditional_get.rb:44:in 'Rack::ConditionalGet#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/head.rb:15:in 'Rack::Head#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/railties-7.2.3.1/lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/railties-7.2.3.1/lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/request_id.rb:33:in 'ActionDispatch::RequestId#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-cors-3.0.0/lib/rack/cors.rb:102:in 'Rack::Cors#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/railties-7.2.3.1/lib/rails/engine.rb:535:in 'Rails::Engine#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/configuration.rb:296:in 'Puma::Configuration::ConfigMiddleware#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/request.rb:103:in 'block in Puma::Request#handle_request'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/request.rb:102:in 'Puma::Request#handle_request'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/server.rb:503:in 'Puma::Server#process_client'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/server.rb:262:in 'block in Puma::Server#run'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+Completed 500 Internal Server Error in 16ms (Views: 0.2ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:21:48 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblems", "variables" => {"difficulty" => "EASY"}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblems", "variables" => {"difficulty" => "EASY"}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}"}}
+Completed 200 OK in 10ms (Views: 0.2ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:21:49 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblems", "variables" => {"difficulty" => "MEDIUM"}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblems", "variables" => {"difficulty" => "MEDIUM"}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}"}}
+Completed 200 OK in 9ms (Views: 0.3ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:21:50 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblems", "variables" => {"difficulty" => "HARD"}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblems", "variables" => {"difficulty" => "HARD"}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}"}}
+Completed 200 OK in 7ms (Views: 0.2ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:21:55 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetPatterns", "variables" => {}, "query" => "query GetPatterns {\n  patterns {\n    slug\n    name\n    icon\n    tagline\n    timeComplexity\n    problemSlugs\n    problems {\n      slug\n      name\n      difficulty\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetPatterns", "variables" => {}, "query" => "query GetPatterns {\n  patterns {\n    slug\n    name\n    icon\n    tagline\n    timeComplexity\n    problemSlugs\n    problems {\n      slug\n      name\n      difficulty\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 11ms (Views: 0.4ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:22:10 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 188ms (Views: 0.6ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:23:12 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblems", "variables" => {}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblems", "variables" => {}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}"}}
+Completed 200 OK in 20ms (Views: 0.9ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:23:16 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 204ms (Views: 0.7ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:24:59 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 238ms (Views: 0.6ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:25:12 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 213ms (Views: 0.6ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:27:56 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 183ms (Views: 0.6ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:29:02 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 188ms (Views: 0.4ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:29:20 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetPatterns", "variables" => {}, "query" => "query GetPatterns {\n  patterns {\n    slug\n    name\n    icon\n    tagline\n    timeComplexity\n    problemSlugs\n    problems {\n      slug\n      name\n      difficulty\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetPatterns", "variables" => {}, "query" => "query GetPatterns {\n  patterns {\n    slug\n    name\n    icon\n    tagline\n    timeComplexity\n    problemSlugs\n    problems {\n      slug\n      name\n      difficulty\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 10ms (Views: 0.3ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:29:21 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetSystemDesignList", "variables" => {}, "query" => "query GetSystemDesignList {\n  systemDesignQuestions {\n    slug\n    name\n    difficulty\n    tags\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetSystemDesignList", "variables" => {}, "query" => "query GetSystemDesignList {\n  systemDesignQuestions {\n    slug\n    name\n    difficulty\n    tags\n    __typename\n  }\n}"}}
+No such file or directory @ rb_sysopen - /mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/data/system-design/index.json
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/models/data_store.rb:87:in 'IO.read'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/models/data_store.rb:87:in 'DataStore#read_json'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/models/data_store.rb:61:in 'DataStore#system_design_questions'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/graphql/types/query_type.rb:61:in 'Types::QueryType#system_design_questions'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:764:in 'Kernel#public_send'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:764:in 'block (2 levels) in GraphQL::Schema::Field#resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:907:in 'block in GraphQL::Schema::Field#with_extensions'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:970:in 'block (2 levels) in GraphQL::Schema::Field#run_extensions_before_resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:973:in 'GraphQL::Schema::Field#run_extensions_before_resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:970:in 'block in GraphQL::Schema::Field#run_extensions_before_resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field_extension.rb:134:in 'GraphQL::Schema::FieldExtension#resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:957:in 'GraphQL::Schema::Field#run_extensions_before_resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:902:in 'GraphQL::Schema::Field#with_extensions'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:733:in 'block in GraphQL::Schema::Field#resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:883:in 'GraphQL::Execution::Interpreter::Runtime#minimal_after_lazy'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/query.rb:28:in 'GraphQL::Query::Runnable#after_lazy'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:731:in 'GraphQL::Schema::Field#resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:467:in 'block (2 levels) in GraphQL::Execution::Interpreter::Runtime#evaluate_selection_with_resolved_keyword_args'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/tracing/trace.rb:90:in 'GraphQL::Tracing::Trace#execute_field'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:466:in 'block in GraphQL::Execution::Interpreter::Runtime#evaluate_selection_with_resolved_keyword_args'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:821:in 'GraphQL::Execution::Interpreter::Runtime#call_method_on_directives'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:454:in 'GraphQL::Execution::Interpreter::Runtime#evaluate_selection_with_resolved_keyword_args'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:358:in 'GraphQL::Execution::Interpreter::Runtime#evaluate_selection'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:314:in 'block (3 levels) in GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/dataloader/null_dataloader.rb:60:in 'GraphQL::Dataloader::NullDataloader#append_job'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:313:in 'block (2 levels) in GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:300:in 'Hash#each'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:300:in 'block in GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:821:in 'GraphQL::Execution::Interpreter::Runtime#call_method_on_directives'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:299:in 'GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:110:in 'block (3 levels) in GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/dataloader/null_dataloader.rb:60:in 'GraphQL::Dataloader::NullDataloader#append_job'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:109:in 'block (2 levels) in GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:208:in 'GraphQL::Execution::Interpreter::Runtime#each_gathered_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:98:in 'block in GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:821:in 'GraphQL::Execution::Interpreter::Runtime#call_method_on_directives'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:97:in 'GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:76:in 'block (4 levels) in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/tracing/trace.rb:68:in 'GraphQL::Tracing::Trace#execute_query'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:75:in 'block (3 levels) in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/dataloader/null_dataloader.rb:60:in 'GraphQL::Dataloader::NullDataloader#append_job'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:61:in 'block (2 levels) in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:60:in 'Array#each'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:60:in 'Enumerable#each_with_index'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:60:in 'block in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/tracing/trace.rb:64:in 'GraphQL::Tracing::Trace#execute_multiplex'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:42:in 'GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema.rb:1629:in 'GraphQL::Schema.multiplex'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema.rb:1604:in 'GraphQL::Schema.execute'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/controllers/graphql_controller.rb:7:in 'GraphqlController#execute'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/basic_implicit_render.rb:8:in 'ActionController::BasicImplicitRender#send_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/base.rb:215:in 'AbstractController::Base#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/rendering.rb:193:in 'ActionController::Rendering#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/callbacks.rb:261:in 'block in AbstractController::Callbacks#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/callbacks.rb:260:in 'AbstractController::Callbacks#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/rescue.rb:27:in 'ActionController::Rescue#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/instrumentation.rb:77:in 'block in ActionController::Instrumentation#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/notifications.rb:210:in 'block in ActiveSupport::Notifications.instrument'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/notifications.rb:210:in 'ActiveSupport::Notifications.instrument'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/instrumentation.rb:76:in 'ActionController::Instrumentation#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/params_wrapper.rb:259:in 'ActionController::ParamsWrapper#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/base.rb:152:in 'AbstractController::Base#process'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/routing/route_set.rb:67:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:53:in 'block in ActionDispatch::Journey::Router#serve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:133:in 'block in ActionDispatch::Journey::Router#find_routes'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:126:in 'Array#each'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:126:in 'ActionDispatch::Journey::Router#find_routes'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:34:in 'ActionDispatch::Journey::Router#serve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/routing/route_set.rb:896:in 'ActionDispatch::Routing::RouteSet#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/etag.rb:29:in 'Rack::ETag#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/conditional_get.rb:44:in 'Rack::ConditionalGet#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/head.rb:15:in 'Rack::Head#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/railties-7.2.3.1/lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/railties-7.2.3.1/lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/request_id.rb:33:in 'ActionDispatch::RequestId#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-cors-3.0.0/lib/rack/cors.rb:102:in 'Rack::Cors#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/railties-7.2.3.1/lib/rails/engine.rb:535:in 'Rails::Engine#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/configuration.rb:296:in 'Puma::Configuration::ConfigMiddleware#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/request.rb:103:in 'block in Puma::Request#handle_request'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/request.rb:102:in 'Puma::Request#handle_request'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/server.rb:503:in 'Puma::Server#process_client'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/server.rb:262:in 'block in Puma::Server#run'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+Completed 500 Internal Server Error in 13ms (Views: 0.6ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:29:23 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblems", "variables" => {}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblems", "variables" => {}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}"}}
+Completed 200 OK in 8ms (Views: 0.3ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:29:48 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblems", "variables" => {"difficulty" => "EASY"}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblems", "variables" => {"difficulty" => "EASY"}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}"}}
+Completed 200 OK in 11ms (Views: 0.2ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:29:49 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblems", "variables" => {"difficulty" => "MEDIUM"}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblems", "variables" => {"difficulty" => "MEDIUM"}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}"}}
+Completed 200 OK in 10ms (Views: 0.3ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:29:51 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblems", "variables" => {"difficulty" => "HARD"}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblems", "variables" => {"difficulty" => "HARD"}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}"}}
+Completed 200 OK in 8ms (Views: 0.2ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:29:58 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetPatterns", "variables" => {}, "query" => "query GetPatterns {\n  patterns {\n    slug\n    name\n    icon\n    tagline\n    timeComplexity\n    problemSlugs\n    problems {\n      slug\n      name\n      difficulty\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetPatterns", "variables" => {}, "query" => "query GetPatterns {\n  patterns {\n    slug\n    name\n    icon\n    tagline\n    timeComplexity\n    problemSlugs\n    problems {\n      slug\n      name\n      difficulty\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 8ms (Views: 0.1ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:29:59 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetSystemDesignList", "variables" => {}, "query" => "query GetSystemDesignList {\n  systemDesignQuestions {\n    slug\n    name\n    difficulty\n    tags\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetSystemDesignList", "variables" => {}, "query" => "query GetSystemDesignList {\n  systemDesignQuestions {\n    slug\n    name\n    difficulty\n    tags\n    __typename\n  }\n}"}}
+No such file or directory @ rb_sysopen - /mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/data/system-design/index.json
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/models/data_store.rb:87:in 'IO.read'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/models/data_store.rb:87:in 'DataStore#read_json'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/models/data_store.rb:61:in 'DataStore#system_design_questions'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/graphql/types/query_type.rb:61:in 'Types::QueryType#system_design_questions'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:764:in 'Kernel#public_send'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:764:in 'block (2 levels) in GraphQL::Schema::Field#resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:907:in 'block in GraphQL::Schema::Field#with_extensions'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:970:in 'block (2 levels) in GraphQL::Schema::Field#run_extensions_before_resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:973:in 'GraphQL::Schema::Field#run_extensions_before_resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:970:in 'block in GraphQL::Schema::Field#run_extensions_before_resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field_extension.rb:134:in 'GraphQL::Schema::FieldExtension#resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:957:in 'GraphQL::Schema::Field#run_extensions_before_resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:902:in 'GraphQL::Schema::Field#with_extensions'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:733:in 'block in GraphQL::Schema::Field#resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:883:in 'GraphQL::Execution::Interpreter::Runtime#minimal_after_lazy'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/query.rb:28:in 'GraphQL::Query::Runnable#after_lazy'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:731:in 'GraphQL::Schema::Field#resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:467:in 'block (2 levels) in GraphQL::Execution::Interpreter::Runtime#evaluate_selection_with_resolved_keyword_args'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/tracing/trace.rb:90:in 'GraphQL::Tracing::Trace#execute_field'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:466:in 'block in GraphQL::Execution::Interpreter::Runtime#evaluate_selection_with_resolved_keyword_args'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:821:in 'GraphQL::Execution::Interpreter::Runtime#call_method_on_directives'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:454:in 'GraphQL::Execution::Interpreter::Runtime#evaluate_selection_with_resolved_keyword_args'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:358:in 'GraphQL::Execution::Interpreter::Runtime#evaluate_selection'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:314:in 'block (3 levels) in GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/dataloader/null_dataloader.rb:60:in 'GraphQL::Dataloader::NullDataloader#append_job'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:313:in 'block (2 levels) in GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:300:in 'Hash#each'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:300:in 'block in GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:821:in 'GraphQL::Execution::Interpreter::Runtime#call_method_on_directives'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:299:in 'GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:110:in 'block (3 levels) in GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/dataloader/null_dataloader.rb:60:in 'GraphQL::Dataloader::NullDataloader#append_job'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:109:in 'block (2 levels) in GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:208:in 'GraphQL::Execution::Interpreter::Runtime#each_gathered_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:98:in 'block in GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:821:in 'GraphQL::Execution::Interpreter::Runtime#call_method_on_directives'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:97:in 'GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:76:in 'block (4 levels) in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/tracing/trace.rb:68:in 'GraphQL::Tracing::Trace#execute_query'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:75:in 'block (3 levels) in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/dataloader/null_dataloader.rb:60:in 'GraphQL::Dataloader::NullDataloader#append_job'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:61:in 'block (2 levels) in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:60:in 'Array#each'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:60:in 'Enumerable#each_with_index'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:60:in 'block in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/tracing/trace.rb:64:in 'GraphQL::Tracing::Trace#execute_multiplex'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:42:in 'GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema.rb:1629:in 'GraphQL::Schema.multiplex'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema.rb:1604:in 'GraphQL::Schema.execute'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/controllers/graphql_controller.rb:7:in 'GraphqlController#execute'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/basic_implicit_render.rb:8:in 'ActionController::BasicImplicitRender#send_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/base.rb:215:in 'AbstractController::Base#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/rendering.rb:193:in 'ActionController::Rendering#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/callbacks.rb:261:in 'block in AbstractController::Callbacks#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/callbacks.rb:260:in 'AbstractController::Callbacks#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/rescue.rb:27:in 'ActionController::Rescue#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/instrumentation.rb:77:in 'block in ActionController::Instrumentation#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/notifications.rb:210:in 'block in ActiveSupport::Notifications.instrument'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/notifications.rb:210:in 'ActiveSupport::Notifications.instrument'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/instrumentation.rb:76:in 'ActionController::Instrumentation#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/params_wrapper.rb:259:in 'ActionController::ParamsWrapper#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/base.rb:152:in 'AbstractController::Base#process'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/routing/route_set.rb:67:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:53:in 'block in ActionDispatch::Journey::Router#serve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:133:in 'block in ActionDispatch::Journey::Router#find_routes'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:126:in 'Array#each'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:126:in 'ActionDispatch::Journey::Router#find_routes'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:34:in 'ActionDispatch::Journey::Router#serve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/routing/route_set.rb:896:in 'ActionDispatch::Routing::RouteSet#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/etag.rb:29:in 'Rack::ETag#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/conditional_get.rb:44:in 'Rack::ConditionalGet#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/head.rb:15:in 'Rack::Head#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/railties-7.2.3.1/lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/railties-7.2.3.1/lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/request_id.rb:33:in 'ActionDispatch::RequestId#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-cors-3.0.0/lib/rack/cors.rb:102:in 'Rack::Cors#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/railties-7.2.3.1/lib/rails/engine.rb:535:in 'Rails::Engine#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/configuration.rb:296:in 'Puma::Configuration::ConfigMiddleware#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/request.rb:103:in 'block in Puma::Request#handle_request'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/request.rb:102:in 'Puma::Request#handle_request'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/server.rb:503:in 'Puma::Server#process_client'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/server.rb:262:in 'block in Puma::Server#run'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+Completed 500 Internal Server Error in 9ms (Views: 0.4ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:30:02 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetPatterns", "variables" => {}, "query" => "query GetPatterns {\n  patterns {\n    slug\n    name\n    icon\n    tagline\n    timeComplexity\n    problemSlugs\n    problems {\n      slug\n      name\n      difficulty\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetPatterns", "variables" => {}, "query" => "query GetPatterns {\n  patterns {\n    slug\n    name\n    icon\n    tagline\n    timeComplexity\n    problemSlugs\n    problems {\n      slug\n      name\n      difficulty\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 9ms (Views: 0.3ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:30:16 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetPatterns", "variables" => {}, "query" => "query GetPatterns {\n  patterns {\n    slug\n    name\n    icon\n    tagline\n    timeComplexity\n    problemSlugs\n    problems {\n      slug\n      name\n      difficulty\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetPatterns", "variables" => {}, "query" => "query GetPatterns {\n  patterns {\n    slug\n    name\n    icon\n    tagline\n    timeComplexity\n    problemSlugs\n    problems {\n      slug\n      name\n      difficulty\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 12ms (Views: 0.3ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:35:24 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 223ms (Views: 0.5ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:35:52 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 219ms (Views: 0.7ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:37:24 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 202ms (Views: 0.5ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:38:26 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetPatterns", "variables" => {}, "query" => "query GetPatterns {\n  patterns {\n    slug\n    name\n    icon\n    tagline\n    timeComplexity\n    problemSlugs\n    problems {\n      slug\n      name\n      difficulty\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetPatterns", "variables" => {}, "query" => "query GetPatterns {\n  patterns {\n    slug\n    name\n    icon\n    tagline\n    timeComplexity\n    problemSlugs\n    problems {\n      slug\n      name\n      difficulty\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 10ms (Views: 0.4ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:38:26 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetSystemDesignList", "variables" => {}, "query" => "query GetSystemDesignList {\n  systemDesignQuestions {\n    slug\n    name\n    difficulty\n    tags\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetSystemDesignList", "variables" => {}, "query" => "query GetSystemDesignList {\n  systemDesignQuestions {\n    slug\n    name\n    difficulty\n    tags\n    __typename\n  }\n}"}}
+No such file or directory @ rb_sysopen - /mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/data/system-design/index.json
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/models/data_store.rb:87:in 'IO.read'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/models/data_store.rb:87:in 'DataStore#read_json'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/models/data_store.rb:61:in 'DataStore#system_design_questions'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/graphql/types/query_type.rb:61:in 'Types::QueryType#system_design_questions'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:764:in 'Kernel#public_send'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:764:in 'block (2 levels) in GraphQL::Schema::Field#resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:907:in 'block in GraphQL::Schema::Field#with_extensions'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:970:in 'block (2 levels) in GraphQL::Schema::Field#run_extensions_before_resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:973:in 'GraphQL::Schema::Field#run_extensions_before_resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:970:in 'block in GraphQL::Schema::Field#run_extensions_before_resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field_extension.rb:134:in 'GraphQL::Schema::FieldExtension#resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:957:in 'GraphQL::Schema::Field#run_extensions_before_resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:902:in 'GraphQL::Schema::Field#with_extensions'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:733:in 'block in GraphQL::Schema::Field#resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:883:in 'GraphQL::Execution::Interpreter::Runtime#minimal_after_lazy'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/query.rb:28:in 'GraphQL::Query::Runnable#after_lazy'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema/field.rb:731:in 'GraphQL::Schema::Field#resolve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:467:in 'block (2 levels) in GraphQL::Execution::Interpreter::Runtime#evaluate_selection_with_resolved_keyword_args'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/tracing/trace.rb:90:in 'GraphQL::Tracing::Trace#execute_field'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:466:in 'block in GraphQL::Execution::Interpreter::Runtime#evaluate_selection_with_resolved_keyword_args'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:821:in 'GraphQL::Execution::Interpreter::Runtime#call_method_on_directives'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:454:in 'GraphQL::Execution::Interpreter::Runtime#evaluate_selection_with_resolved_keyword_args'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:358:in 'GraphQL::Execution::Interpreter::Runtime#evaluate_selection'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:314:in 'block (3 levels) in GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/dataloader/null_dataloader.rb:60:in 'GraphQL::Dataloader::NullDataloader#append_job'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:313:in 'block (2 levels) in GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:300:in 'Hash#each'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:300:in 'block in GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:821:in 'GraphQL::Execution::Interpreter::Runtime#call_method_on_directives'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:299:in 'GraphQL::Execution::Interpreter::Runtime#evaluate_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:110:in 'block (3 levels) in GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/dataloader/null_dataloader.rb:60:in 'GraphQL::Dataloader::NullDataloader#append_job'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:109:in 'block (2 levels) in GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:208:in 'GraphQL::Execution::Interpreter::Runtime#each_gathered_selections'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:98:in 'block in GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:821:in 'GraphQL::Execution::Interpreter::Runtime#call_method_on_directives'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter/runtime.rb:97:in 'GraphQL::Execution::Interpreter::Runtime#run_eager'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:76:in 'block (4 levels) in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/tracing/trace.rb:68:in 'GraphQL::Tracing::Trace#execute_query'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:75:in 'block (3 levels) in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/dataloader/null_dataloader.rb:60:in 'GraphQL::Dataloader::NullDataloader#append_job'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:61:in 'block (2 levels) in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:60:in 'Array#each'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:60:in 'Enumerable#each_with_index'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:60:in 'block in GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/tracing/trace.rb:64:in 'GraphQL::Tracing::Trace#execute_multiplex'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/execution/interpreter.rb:42:in 'GraphQL::Execution::Interpreter.run_all'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema.rb:1629:in 'GraphQL::Schema.multiplex'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/graphql-2.5.23/lib/graphql/schema.rb:1604:in 'GraphQL::Schema.execute'
+/mnt/c/Users/tiale/Documents/projects/leetnotes/actual_code/server/app/controllers/graphql_controller.rb:7:in 'GraphqlController#execute'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/basic_implicit_render.rb:8:in 'ActionController::BasicImplicitRender#send_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/base.rb:215:in 'AbstractController::Base#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/rendering.rb:193:in 'ActionController::Rendering#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/callbacks.rb:261:in 'block in AbstractController::Callbacks#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/callbacks.rb:260:in 'AbstractController::Callbacks#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/rescue.rb:27:in 'ActionController::Rescue#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/instrumentation.rb:77:in 'block in ActionController::Instrumentation#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/notifications.rb:210:in 'block in ActiveSupport::Notifications.instrument'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/notifications/instrumenter.rb:58:in 'ActiveSupport::Notifications::Instrumenter#instrument'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/notifications.rb:210:in 'ActiveSupport::Notifications.instrument'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/instrumentation.rb:76:in 'ActionController::Instrumentation#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal/params_wrapper.rb:259:in 'ActionController::ParamsWrapper#process_action'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/abstract_controller/base.rb:152:in 'AbstractController::Base#process'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal.rb:252:in 'ActionController::Metal#dispatch'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_controller/metal.rb:335:in 'ActionController::Metal.dispatch'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/routing/route_set.rb:67:in 'ActionDispatch::Routing::RouteSet::Dispatcher#dispatch'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/routing/route_set.rb:50:in 'ActionDispatch::Routing::RouteSet::Dispatcher#serve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:53:in 'block in ActionDispatch::Journey::Router#serve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:133:in 'block in ActionDispatch::Journey::Router#find_routes'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:126:in 'Array#each'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:126:in 'ActionDispatch::Journey::Router#find_routes'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/journey/router.rb:34:in 'ActionDispatch::Journey::Router#serve'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/routing/route_set.rb:896:in 'ActionDispatch::Routing::RouteSet#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/etag.rb:29:in 'Rack::ETag#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/conditional_get.rb:44:in 'Rack::ConditionalGet#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/head.rb:15:in 'Rack::Head#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/callbacks.rb:31:in 'block in ActionDispatch::Callbacks#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/activesupport-7.2.3.1/lib/active_support/callbacks.rb:101:in 'ActiveSupport::Callbacks#run_callbacks'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/callbacks.rb:30:in 'ActionDispatch::Callbacks#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/actionable_exceptions.rb:18:in 'ActionDispatch::ActionableExceptions#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/debug_exceptions.rb:31:in 'ActionDispatch::DebugExceptions#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/show_exceptions.rb:32:in 'ActionDispatch::ShowExceptions#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/railties-7.2.3.1/lib/rails/rack/logger.rb:41:in 'Rails::Rack::Logger#call_app'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/railties-7.2.3.1/lib/rails/rack/logger.rb:29:in 'Rails::Rack::Logger#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/remote_ip.rb:96:in 'ActionDispatch::RemoteIp#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/request_id.rb:33:in 'ActionDispatch::RequestId#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/runtime.rb:24:in 'Rack::Runtime#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/executor.rb:16:in 'ActionDispatch::Executor#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/static.rb:27:in 'ActionDispatch::Static#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-3.2.6/lib/rack/sendfile.rb:131:in 'Rack::Sendfile#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/actionpack-7.2.3.1/lib/action_dispatch/middleware/host_authorization.rb:143:in 'ActionDispatch::HostAuthorization#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/rack-cors-3.0.0/lib/rack/cors.rb:102:in 'Rack::Cors#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/railties-7.2.3.1/lib/rails/engine.rb:535:in 'Rails::Engine#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/configuration.rb:296:in 'Puma::Configuration::ConfigMiddleware#call'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/request.rb:103:in 'block in Puma::Request#handle_request'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/thread_pool.rb:355:in 'Puma::ThreadPool#with_force_shutdown'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/request.rb:102:in 'Puma::Request#handle_request'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/server.rb:503:in 'Puma::Server#process_client'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/server.rb:262:in 'block in Puma::Server#run'
+/home/tia/.local/share/mise/installs/ruby/3.4.9/lib/ruby/gems/3.4.0/gems/puma-7.2.0/lib/puma/thread_pool.rb:182:in 'block in Puma::ThreadPool#spawn_thread'
+Completed 500 Internal Server Error in 8ms (Views: 0.5ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:38:27 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblems", "variables" => {}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblems", "variables" => {}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}"}}
+Completed 200 OK in 9ms (Views: 0.3ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:42:47 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblems", "variables" => {}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblems", "variables" => {}, "query" => "query GetProblems($difficulty: Difficulty, $search: String) {\n  problems(difficulty: $difficulty, search: $search) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    __typename\n  }\n}"}}
+Completed 200 OK in 10ms (Views: 0.5ms | GC: 0.0ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:42:49 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}"}}
+Completed 200 OK in 249ms (Views: 0.6ms | GC: 44.9ms)
+
+
+Started POST "/graphql" for ::1 at 2026-04-03 19:48:04 -0300
+Processing by GraphqlController#execute as */*
+  Parameters: {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}", "graphql" => {"operationName" => "GetProblem", "variables" => {"slug" => "best-time-to-buy-and-sell-stock"}, "query" => "query GetProblem($slug: String!) {\n  problem(slug: $slug) {\n    id\n    slug\n    name\n    difficulty\n    leetcodeUrl\n    descriptionHtml\n    analysisHtml\n    useCases\n    solutions {\n      slug\n      name\n      approach\n      tags\n      overviewHtml\n      timeComplexity\n      spaceComplexity\n      issues\n      pseudocodeHtml\n      implementations {\n        language\n        file\n        dataStructures\n        codeContent\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}"}}

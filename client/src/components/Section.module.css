@@ -1,0 +1,37 @@
+.section {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-sm);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.icon { font-size: 1rem; }
+
+.title {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.content { color: var(--text-primary); }
+
+.warning {
+  background: var(--warning-bg);
+  border-left: 3px solid var(--warning);
+}
+
+.insight {
+  background: var(--bg-insight);
+  border-left: 3px solid var(--accent);
+}

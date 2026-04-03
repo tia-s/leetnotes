@@ -1,0 +1,138 @@
+.header { margin-bottom: 28px; }
+
+.title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.refLink {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: all 0.15s;
+}
+
+.refLink:hover { color: var(--text-primary); border-color: var(--text-secondary); }
+
+.reqGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.reqLabel {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.reqLabelWarn {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--warning);
+  margin-bottom: 12px;
+}
+
+.reqItem {
+  font-size: 0.9rem;
+  padding: 4px 0;
+  color: var(--text-secondary);
+}
+
+.reqCheck { color: var(--accent); }
+.reqWarn { color: var(--warning); }
+
+.hldOverview {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.components {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.component {
+  padding: 10px 16px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+}
+
+.componentName { font-weight: 700; color: var(--text-primary); }
+.componentSep { color: var(--text-muted); margin: 0 8px; }
+.componentDesc { color: var(--text-secondary); }
+
+.deepDive {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.deepDive:last-child { border-bottom: none; }
+.ddTitle { font-size: 0.95rem; }
+
+.ddContent {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-top: 6px;
+}
+
+.tradeOff {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.tradeOff:last-child { border-bottom: none; }
+.toTitle { font-size: 0.95rem; }
+
+.toGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 12px;
+}
+
+.toLabel {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+.toItem {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding: 2px 0;
+}
+
+.bottleneck {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(196, 135, 59, 0.15);
+}
+
+.bottleneck:last-child { border-bottom: none; }
+.bnTitle { font-size: 0.9rem; color: var(--warning); }
+
+.bnMitigation {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 4px;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "LeetNotes",
+  "tagline": "From naive to optimal — documenting the thinking, not just the answer",
+  "languages": ["python", "java"],
+  "difficulties": ["easy", "medium", "hard"],
+  "approaches": ["naive", "suboptimal", "optimal"]
+}

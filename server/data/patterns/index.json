@@ -1,0 +1,39 @@
+{
+  "patterns": [
+    {
+      "slug": "two-pointers",
+      "name": "Two Pointers",
+      "icon": "👉",
+      "description": "description.md",
+      "problems": ["two-sum", "merge-two-sorted-lists"]
+    },
+    {
+      "slug": "sliding-window",
+      "name": "Sliding Window",
+      "icon": "🪟",
+      "description": "Maintain a window of elements that satisfies a condition",
+      "problems": ["best-time-to-buy-and-sell-stock", "maximum-subarray"]
+    },
+    {
+      "slug": "binary-search",
+      "name": "Binary Search",
+      "icon": "🔍",
+      "description": "Divide search space in half each step for O(log n) lookups",
+      "problems": ["binary-search"]
+    },
+    {
+      "slug": "dynamic-programming",
+      "name": "Dynamic Programming",
+      "icon": "✨",
+      "description": "Break problems into overlapping subproblems with optimal substructure",
+      "problems": ["best-time-to-buy-and-sell-stock", "maximum-subarray", "climbing-stairs"]
+    },
+    {
+      "slug": "merge-divide-conquer",
+      "name": "Merge / Divide & Conquer",
+      "icon": "🔀",
+      "description": "Split problem into independent subproblems, solve, and combine",
+      "problems": ["merge-two-sorted-lists", "binary-search"]
+    }
+  ]
+}

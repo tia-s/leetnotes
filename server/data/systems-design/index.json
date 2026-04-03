@@ -1,0 +1,16 @@
+{
+  "questions": [
+    {
+      "slug": "url-shortener",
+      "name": "Design a URL Shortener",
+      "difficulty": "medium",
+      "tags": ["hashing", "database", "caching"]
+    },
+    {
+      "slug": "chat-system",
+      "name": "Design a Chat System",
+      "difficulty": "hard",
+      "tags": ["websockets", "message-queue", "database"]
+    }
+  ]
+}

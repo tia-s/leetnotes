@@ -1,0 +1,11 @@
+{
+  "problems": [
+    {
+      "id": 121,
+      "slug": "best-time-to-buy-and-sell-stock",
+      "name": "Best Time to Buy and Sell Stock",
+      "difficulty": "easy",
+      "leetcode_url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+    }
+  ]
+}
